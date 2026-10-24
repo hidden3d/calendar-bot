@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hidden Calendar Bot — личный Telegram-бот для управления событиями Google Календаря с помощью текста и голосовых сообщений.">
+  <meta name="theme-color" content="#164f47">
+  <title>Hidden Calendar Bot — календарь вашими словами</title>
+  <link rel="canonical" href="https://hidden3d.github.io/calendar-bot/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержанию</a>
+  <header class="site-header wrap">
+    <a class="brand" href="./" aria-label="Hidden Calendar Bot — главная">
+      <img src="favicon.svg" width="36" height="36" alt="">
+      <span>Hidden Calendar Bot</span>
+    </a>
+    <nav aria-label="Основная навигация">
+      <a href="#how">Как работает</a>
+      <a href="privacy/">Конфиденциальность</a>
+    </nav>
+  </header>
+  <main id="main" class="wrap">
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Личный помощник в Telegram</p>
+        <h1 id="hero-title">Ваш календарь.<br><span>Вашими словами.</span></h1>
+        <p class="lead">Пишите или говорите, что запланировать. Hidden Calendar Bot поможет добавить встречу, перенести событие или посмотреть расписание в Google Календаре.</p>
+        <div class="hero-links">
+          <a class="button" href="#how">Как это работает <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="privacy/">Как обрабатываются данные</a>
+        </div>
+        <p class="small">Доступ к боту предоставляется владельцем. Проект предназначен для личного использования и небольшого круга приглашённых пользователей.</p>
+      </div>
+      <aside class="conversation" aria-label="Вымышленный пример диалога">
+        <div class="conversation-top"><span class="status-dot" aria-hidden="true"></span> Пример диалога</div>
+        <div class="bubble user-bubble">Добавь завтра прогулку в 18:00.<br>Напомни за час.</div>
+        <div class="bubble bot-bubble">
+          <span class="bubble-label">Hidden Calendar Bot</span>
+          <strong>Создать: прогулку</strong>
+          <p>Завтра · 18:00 → 19:00<br>Напоминание: за 1 час</p>
+          <div class="demo-actions" aria-label="Пример кнопок подтверждения: да, редактировать, нет">
+            <span>✓ Да</span><span>✎ Ред.</span><span>× Нет</span>
+          </div>
+        </div>
+        <p class="conversation-note">Изменение попадёт в календарь после вашего подтверждения.</p>
+      </aside>
+    </section>
+    <section class="section" aria-labelledby="features-title">
+      <div class="section-heading"><p class="eyebrow">Повседневные планы</p><h2 id="features-title">Меньше действий для обычных дел</h2></div>
+      <div class="feature-grid">
+        <article class="feature"><span class="feature-number">01</span><h3>Текст и голос</h3><p>Опишите задачу обычными словами. Gemini помогает разобрать текст или расшифровать голосовое сообщение.</p></article>
+        <article class="feature"><span class="feature-number">02</span><h3>События и повторения</h3><p>Создавайте, переносите и отменяйте события. Поддерживаются события на весь день, несколько дней и повторяющиеся встречи.</p></article>
+        <article class="feature"><span class="feature-number">03</span><h3>Напоминания</h3><p>Укажите «за час» или «за сутки». Если напоминание не задано, при создании события используются настройки календаря.</p></article>
+        <article class="feature"><span class="feature-number">04</span><h3>Расписание под рукой</h3><p>Запросите планы на день или неделю. В личных настройках можно включить утреннее расписание по будням.</p></article>
+      </div>
+    </section>
+    <section id="how" class="section how-section" aria-labelledby="how-title">
+      <div class="section-heading"><p class="eyebrow">От сообщения к событию</p><h2 id="how-title">Вы управляете каждым изменением</h2></div>
+      <ol class="steps">
+        <li><h3>Отправьте запрос</h3><p>В личном чате с ботом напишите задачу или запишите голосовое сообщение.</p></li>
+        <li><h3>Проверьте детали</h3><p>Бот покажет дату, время и действие. Если данных не хватает, задаст уточняющий вопрос.</p></li>
+        <li><h3>Подтвердите</h3><p>Нажмите «Да», чтобы выполнить изменение в Google Календаре. Можно отредактировать запрос или отменить его.</p></li>
+      </ol>
+    </section>
+    <section class="section connection" aria-labelledby="connection-title">
+      <div><p class="eyebrow">Подключение Google</p><h2 id="connection-title">Один настроенный календарь</h2></div>
+      <div>
+        <p>Владелец подключает свой Google-аккаунт через OAuth. Бот получает разрешение просматривать и изменять события, а приложение работает с выбранным владельцем календарём.</p>
+        <p>Приглашённые пользователи работают с этим общим календарём. Их собственные Google-аккаунты автоматически не подключаются.</p>
+        <p>Текст и голосовые запросы обрабатывает Gemini. История запросов и расшифровки сохраняются на сервере; аудиофайлы отдельно не архивируются. <a href="privacy/">Подробнее об обработке и удалении данных →</a></p>
+      </div>
+    </section>
+    <section id="contact" class="contact-card" aria-labelledby="contact-title">
+      <div><p class="eyebrow">Связаться с владельцем</p><h2 id="contact-title">Поддержка и вопросы о данных</h2><p>Владелец проекта — <a href="https://github.com/hidden3d">hidden3d</a>.</p></div>
+      <a class="contact-email" href="mailto:reader.hid2@gmail.com">reader.hid2@gmail.com <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+  <footer class="site-footer wrap"><span>Hidden Calendar Bot · Личный проект</span><div><a href="privacy/">Политика конфиденциальности</a><a href="privacy/#terms">Условия использования</a></div></footer>
+</body>
+</html>
